@@ -1,0 +1,61 @@
+.navbar {
+  background-color: #2b3e50;
+  color: white;
+  padding: 15px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 10px;
+}
+/* For both dashboards */
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dashboard-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 200px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.dashboard-button:active {
+  background-color: #388e3c; /* Even darker green on click */
+}
+
+
+body {
+  margin: 0;
+  padding-top: 60px; /* Adjust based on navbar height */
+}
+
+.navbar-link-button {
+  background-color: #3c8dbc;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-link {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.tab-content {
+  padding: 20px;
+}

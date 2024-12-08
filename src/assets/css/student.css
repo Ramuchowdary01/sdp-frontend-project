@@ -1,0 +1,85 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding-top: 60px; /* Adjust based on navbar height */
+}
+/* For both dashboards */
+.dashboard-buttons {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
+}
+
+.dashboard-button {
+background-color: #4CAF50; /* Green */
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+margin: 10px 0;
+width: 200px;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+.dashboard-button:hover {
+background-color: #45a049; /* Darker green on hover */
+}
+
+.dashboard-button:active {
+background-color: #388e3c; /* Even darker green on click */
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #33ec0e;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-link {
+  color: #f4f4f9;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #cce1ff;
+}
+
+/* Adjust page content to avoid being hidden behind navbar */
+.main-content {
+  margin-top: 80px; /* Adjust this value if the navbar height changes */
+}
